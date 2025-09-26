@@ -20,9 +20,9 @@ jobs:
           node-version: '22'
 
       - name: Install dependencies
-        run: npm Install
-      
-      - name: Build and run App
-        run: npm run dev
+        run: npm install
+
+      - name: Start App
+        run: pm2 start npm -- run start
 
       
