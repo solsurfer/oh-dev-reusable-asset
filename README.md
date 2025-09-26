@@ -1,5 +1,5 @@
 ## Owls Head Digital
-# Change readme to reflect new goals for project6
+# Change readme to reflect new goals for project7
 
 # Hello Edge
 
