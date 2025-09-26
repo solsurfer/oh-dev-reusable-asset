@@ -8,7 +8,7 @@ on:
 jobs:
   deploy:
     name: Deploy on Self Hosted runner
-    runs-on: self-hosted, macOS, X64
+    runs-on: self-hosted
 
     steps:
       - name: Checkout latest code
