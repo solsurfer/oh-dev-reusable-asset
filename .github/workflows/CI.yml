@@ -22,9 +22,12 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Install PM2 globally
+        run: npm install -g pm2
+
       - name: Start App
-        run: |
-          npm run dev &
-          sleep 10 # give it time to boot
+        run: pm2 start npm -- run start
+
+
 
       
