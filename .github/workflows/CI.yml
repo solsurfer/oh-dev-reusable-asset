@@ -1,7 +1,7 @@
 name: Deploy Node.js App after each commit
 
 on:
-  push:
+  commit:
     branches:
       - main
 
