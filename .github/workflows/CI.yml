@@ -23,6 +23,8 @@ jobs:
         run: npm install
 
       - name: Start App
-        run: pm2 start npm -- run start
+        run: |
+          npm run dev &
+          sleep 10 # give it time to boot
 
       
