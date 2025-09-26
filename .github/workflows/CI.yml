@@ -12,10 +12,10 @@ jobs:
 
     steps:
       - name: Checkout latest code
-        uses: actions/checkout@V4
+        uses: actions/checkout@v4
 
       - name: Setup up Node.js
-        uses: actions/setup-node@V4
+        uses: actions/setup-node@v4
         with:
           node-version: '22'
 
