@@ -1,0 +1,28 @@
+name: Deploy Node.js App after each commit
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: Deploy on Self Hosted runner
+    runs-on: self-hosted, macOS, X64
+
+    steps:
+      - name: Checkout latest code
+        uses: actions/checkout@V4
+
+      - name: Setup up Node.js
+        uses: actions/setup-node@V4
+        with:
+          node-version: '22'
+
+      - name: Install dependencies
+        run: npm Install
+      
+      - name: Build and run App
+        run: npm run dev
+
+      
