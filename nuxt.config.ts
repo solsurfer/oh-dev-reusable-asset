@@ -39,7 +39,7 @@ export default defineNuxtConfig({
       "@babel/transform-runtime",
       "@babel/transform-async-to-generator"
     ]
-  },
+  }},
 
   // Development config
   eslint: {
