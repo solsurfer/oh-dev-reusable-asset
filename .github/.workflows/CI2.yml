@@ -1,5 +1,12 @@
-jobs:
+name: Deploy Node.js App after each commit
+
+on:
   push:
+    branches:
+      - main
+
+jobs:
+  deploy:
     name: Deploy on Self Hosted runner
     runs-on: self-hosted
 
