@@ -14,7 +14,7 @@ jobs:
       - name: Checkout latest code
         uses: actions/checkout@v4
         with:
-          path: oh-dev-reusable-asset
+          path: /Users/Kirk/Development/OwlsHead/oh-dev-reusable-asset/temp
 
       - name: Setup up Node.js
         uses: actions/setup-node@v4
