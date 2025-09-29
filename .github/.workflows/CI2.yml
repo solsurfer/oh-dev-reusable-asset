@@ -1,5 +1,5 @@
 jobs:
-  deploy:
+  push:
     name: Deploy on Self Hosted runner
     runs-on: self-hosted
 
