@@ -5,7 +5,9 @@ export default defineNuxtConfig({
     '@nuxt/fonts',
     '@nuxt/eslint'
   ],
-
+  devServer: {
+    host: '0.0.0.0'
+  },
   // https://devtools.nuxt.com
   devtools: { enabled: true },
 
@@ -16,6 +18,7 @@ export default defineNuxtConfig({
       helloText: 'Hello from Owls Head 👋'
     }
   },
+  
   // https://nuxt.com/docs/getting-started/upgrade#testing-nuxt-4
   future: { compatibilityVersion: 4 },
   compatibilityDate: '2025-03-01',
