@@ -13,6 +13,8 @@ jobs:
     steps:
       - name: Checkout latest code
         uses: actions/checkout@v4
+          with:
+            path: ~/Development/OwlsHead/oh-dev-reusable-asset/test
 
       - name: Setup up Node.js
         uses: actions/setup-node@v4
